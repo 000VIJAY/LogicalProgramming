@@ -1,22 +1,23 @@
 ﻿Console.WriteLine("Write the number");
 int number = Convert.ToInt32(Console.ReadLine());
-int sum = 0;
-for (int i = 1; i < number; i++)  //i act as a divisor
+int num = 0;
+for (int i = 1; i <= number; i++)
 {
     int remainder = number % i;
-   
     if (remainder == 0)
     {
-        sum = sum + i;
-        Console.WriteLine( "sum :" +sum );
-
+        num++;
     }
 }
-    if (sum == number)
+    if (num == 2)
     {
-        Console.WriteLine("number is perfect");
+        Console.WriteLine("Number is : Prime number");
     }
     else
     {
-        Console.WriteLine("number is not perfect");
+        Console.WriteLine("Number is : not a Prime number");
     }
+
+    
+
+
