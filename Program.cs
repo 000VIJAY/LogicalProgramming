@@ -1,23 +1,10 @@
-﻿Console.WriteLine("Write the number");
+﻿Console.WriteLine("Write a number ");
 int number = Convert.ToInt32(Console.ReadLine());
 int num = 0;
-for (int i = 1; i <= number; i++)
+while (number > 0)
 {
-    int remainder = number % i;
-    if (remainder == 0)
-    {
-        num++;
-    }
+        int remainder = number % 10;
+       num = num*10 + remainder;
+        number = number / 10; 
 }
-    if (num == 2)
-    {
-        Console.WriteLine("Number is : Prime number");
-    }
-    else
-    {
-        Console.WriteLine("Number is : not a Prime number");
-    }
-
-    
-
-
+Console.WriteLine(num);
