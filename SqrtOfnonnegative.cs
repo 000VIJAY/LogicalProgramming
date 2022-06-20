@@ -11,14 +11,14 @@ namespace LogicalProgrammingProblem
         public static void Coupen()
         {
             Console.WriteLine("write number whose squre root wants to find");
-            double c =Convert.ToDouble(Console.ReadLine());
-            double t =c;
-            Console.WriteLine("value of t : " +t);
-            double x= c / t;
+            double c = Convert.ToDouble(Console.ReadLine());
+            double t = c;
+            Console.WriteLine("value of t : " + t);
+            double x = c / t;
             double epsilon = 1e-15;
-            while (Math.Abs(t - x) > epsilon * t )
+            while (Math.Abs(t - x) > epsilon * t)
             {
-                t = (t+x)/2;
+                t = (t + x) / 2;
             }
             Console.WriteLine("The accuracy of desired value : " + t);
 
